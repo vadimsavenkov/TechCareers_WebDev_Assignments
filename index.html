@@ -3,9 +3,195 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>"Hello World!"</title>
+    <title>Free Diving</title>
+    <style>
+      /*Import our font from Google fonts*/ 
+@import url('https://fonts.googleapis.com/css2?family=Kurale&family=Raleway:ital,wght@0,100;0,200;0,500;0,700;1,100;1,900&display=swap');
+
+/* Resets */
+ body { 
+margin: 0; 
+background-image: url("https://picsum.photos/id/279/1000/1000");  
+background-size: cover;  
+}
+
+/* I want to comment */
+/* Header Section*/
+header {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;  
+  margin: right;
+    
+  /*   padding: 10px 10px;  */
+  /*   flex-start;  */
+  background-color: rebeccapurple;
+  background-image: url("https://picsum.photos/id/1061/1500/1500");
+  background-size: cover;   
+  background-position: center;
+}
+ 
+/* body { */
+/*   margin: 0; */
+/*   background-image: url("https://picsum.photos/id/279/1000/1000");  */
+/*   background-size: cover;  */
+/* } */
+
+nav ul {
+ list-style-type: none;
+ padding: 0;
+}
+
+nav ul {
+  display: flex; 
+/*   margin: 0;    */
+/*   justify-content: right;   */
+/*   background-color: grey;  */
+/*   border: 2px solid black; */
+/*   border-radius: 10px; */
+  
+}
+
+nav li {
+   flex: auto;  
+}
+
+.wide { 
+   flex-grow: 2;  
+/*  justify-content: center; */
+}
+
+nav a {
+  color: black; 
+  text-decoration: none;
+  text-align: center; 
+  background-color: lightblue; 
+  padding: 0.75em 0.75em;
+/*   background-image: linear-gradient(red, yellow);  */
+  border-radius: 100px; 
+  border: 2px solid grey;  
+  
+  display: block;
+  
+  font-family: "Roboto Slab", san-serif;
+  font-size: 20px;
+  
+}
+
+nav a:hover {
+   background-image: linear-gradient(lightblue, purple);
+}
+
+nav a:active {
+  background-image: linear-gradient(white, grey);
+}
+
+.current {
+    background-image: linear-gradient(grey, lightblue);
+}
+
+
+header img {
+  
+  width: 100px;
+     
+  /*float the text around the image */
+/*   float: right; */
+  
+  margin-right:15px;
+/*   border: 1px solid black; */
+  border-radius: 50%;
+  padding: 5px 10px;
+}
+  
+header h1 {
+  margin: left;
+  padding: 1rem;
+  height: 10vh; 
+  text-align: center;
+  
+/*   font-variant: small-caps; */
+  font-size: 10px;
+  margin-top: 10px;  
+  margin-right: 600px;
+  color: blue;
+}
+
+/* Footer Section */
+footer {
+/*   padding: 1em; */
+  
+  text-align: center;
+  background-color: grey;
+  color: white;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Kurale', san-serif;
+}
+
+body {
+  font-family: 'Kurale', san-serif;
+  
+  font-size: 30px; /*default 15px;*/
+  line-height: 1.5; /*default 1.2, try     for aminimum of 1.5;*/
+ 
+}
+
+main img{
+  
+  width: 200px;
+  
+  /*float the text around the image */
+  float: left;
+  
+  margin-right:16px;
+  border: 1px solid black;
+  border-radius: 50%;
+  
+/*  shape-outside: circle(50%); */
+  padding: 5px 10px;
+}
+
+strong {
+  font-weight: normal;
+}
+
+        
+    </style>
 </head>
 <body>
-    "Hello World!"
-</body>
+  <header>
+    <img src="https://picsum.photos/id/1015/150/150">
+    <nav>
+      <ul>
+        <li><a href="https://en.wikipedia.org/wiki/Freediving">About</a></li>
+        <li><a href="https://www.adventure-journal.com/2020/03/natalia-molchanova-worlds-best-free-diver-vanished-during-final-dive/">World Records</a></li>
+        <li class="wide"><a href="https://openlibrary.org/books/OL8777785M/Manual_of_Freediving">Resources</a></li> 
+        <li> <a class="current" href="https://blog.padi.com/2019/08/06/what-is-freediving-and-other-frequently-asked-questions/">FAQs</a></li>
+        <li> <a class="long" href="https://www.onebreathfreediving.com/blog">Blog</a></li>
+      </ul>
+    </header>
+    <main>
+      <img src="https://picsum.photos/id/323/700/700" alt="photo from picsum">
+      <h1>Freediving</h1>
+      <p>Freediving,<a href="https://en.wikipedia.org/wiki/Herbert_Nitsch"> free-diving</a>, free diving, breath-hold diving, or skin diving is a form of underwater diving that relies on breath-holding until resurfacing rather than the use of breathing apparatus such as scuba gear. Besides the <strong>limits of breath-hold</strong>, immersion in water and exposure to high ambient pressure also have <strong>physiological effects</strong> that limit the depths and duration possible in freediving.</p>
+        
+        <p>Examples of freediving activities are:</p>
+        <ul>
+          <li>Traditional fishing techniques,</li> 
+          <li>Competitive and non-competitive freediving,</li>
+          <li>Competitive and non-competitive spearfishing and freediving photography,</li>
+          <li>Synchronised swimming,</li>
+          <li>Underwater football, underwater rugby, underwater hockey, underwater target shooting and snorkeling.</li>
+          </ul> 
+        
+        <p>There are also a range of <strong><a href="https://www.cmas.org/apnoea/about-2012032621">"competitive apnea"</a></strong> disciplines; in which competitors attempt to attain great depths, times, or distances on a single breath.</p> 
+    </main>
+    
+    <footer>
+      Copyright 2020 Vadim Savenkov
+    </footer>
+    </body>
 </html>
+    
